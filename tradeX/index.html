@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhan - Stock Trading Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">TradeX</div>
+            <div class="nav-links">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#stocks">Stocks</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#orders">Orders</a>
+                <a href="#profile">Profile</a>
+            </div>
+            <div class="user-menu">
+                <span>Welcome, User</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <!-- Portfolio Summary -->
+        <section class="portfolio-summary">
+            <h2>Portfolio Summary</h2>
+            <div class="portfolio-value" id="portfolioValue">₹1,25,000.00</div>
+            <div class="portfolio-details">
+                <div>Today's P&L: <span id="todayPL" class="price-up">+₹2,500.00</span></div>
+                <div>Total Investment: <span id="totalInvestment">₹1,22,500.00</span></div>
+                <div>Available Balance: <span id="availableBalance">₹15,000.00</span></div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <h3>Quick Actions</h3>
+            <div class="action-buttons">
+                <button class="action-btn" onclick="showTradingPanel()">Buy Stocks</button>
+                <button class="action-btn" onclick="showTradingPanel()">Sell Stocks</button>
+                <button class="action-btn" onclick="showPortfolio()">View Portfolio</button>
+                <button class="action-btn" onclick="showOrders()">Order History</button>
+            </div>
+        </section>
+
+        <!-- Stock List -->
+        <section class="stock-list-section">
+            <h2>Live Market</h2>
+            <div class="stock-filters">
+                <input type="text" id="searchStocks" placeholder="Search stocks..." onkeyup="filterStocks()">
+                <select id="filterChange" onchange="filterStocks()">
+                    <option value="all">All Changes</option>
+                    <option value="gainers">Gainers</option>
+                    <option value="losers">Losers</option>
+                </select>
+            </div>
+            
+            <div class="stock-list">
+                <div class="stock-header">
+                    <div>Stock</div>
+                    <div>LTP</div>
+                    <div>Change</div>
+                    <div>Change %</div>
+                    <div>Volume</div>
+                    <div>Action</div>
+                </div>
+                
+                <div class="stock-list-container" id="stockList">
+                    <!-- Stocks will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Trading Panel -->
+        <section class="trading-panel" id="tradingPanel">
+            <div class="panel-header">
+                <h2>Trade Stocks</h2>
+                <button class="close-btn" onclick="hideTradingPanel()">×</button>
+            </div>
+            
+            <div class="trade-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="stockSelect">Select Stock:</label>
+                        <select id="stockSelect" onchange="updateStockPrice()">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orderType">Order Type:</label>
+                        <select id="orderType" onchange="togglePriceField()">
+                            <option value="market">Market Order</option>
+                            <option value="limit">Limit Order</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" min="1" value="1" onchange="calculateTotal()">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="price">Price (₹):</label>
+                        <input type="number" id="price" step="0.01" placeholder="Market Price" onchange="calculateTotal()">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="totalAmount">Total Amount:</label>
+                    <input type="text" id="totalAmount" readonly value="₹0.00">
+                </div>
+
+                <div class="trade-buttons">
+                    <button class="buy-btn" onclick="placeOrder('buy')">Buy</button>
+                    <button class="sell-btn" onclick="placeOrder('sell')">Sell</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order History -->
+        <section class="order-history" id="orderHistory">
+            <h2>Order History</h2>
+            <div class="orders-list">
+                <div class="order-header">
+                    <div>Date</div>
+                    <div>Stock</div>
+                    <div>Type</div>
+                    <div>Quantity</div>
+                    <div>Price</div>
+                    <div>Status</div>
+                </div>
+                <div id="ordersContainer">
+                    <!-- Orders will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
