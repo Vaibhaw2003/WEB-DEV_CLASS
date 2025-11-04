@@ -43,7 +43,7 @@ html, body{
     justify-content: center;
     background-color: greenyellow;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 .btn{
     padding: 10px 20px;

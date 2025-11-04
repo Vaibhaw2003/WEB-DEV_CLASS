@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+    <div>
+     <nav class="bg-blue-500 text-3xl font-bold p-4 text-white flex justify-between items-center h-15">
+        <h1 class="uppercase ">calculator</h1>
+        <header class="space-x-4">
+            <a href="../DAY-12/index.html">HOME</a>
+            <a href="../DAY-9/index.html">ABOUT</a>
+            <a href="product">PRODUCT</a>
+        </header>
+     </nav>
+
+         <div class="flex flex-col items-center justify-center min-h-screen text-white space-y-4 gap-4 bg-gray-800 p-8 rounded-lg">
+            <div>
+                <lebel class="text-2xl" for="num1" class="text-2xl">First Number:</label>
+                <input class="text-3xl border-red " type="text" id="num1" placeholder="Enter first number" />
+
+            </div>
+            <div>  
+                <label class="text-2xl" for="num2" class="text-2xl">Second Number:</label>
+                <input class="text-3xl" type="text" id="num2" placeholder="Enter second number" />
+            </div>
+            <div class="space-x-4 border-white text-center p-4  rounded-lg flex justify-center gap-4 ">
+                <button class="text-2xl bg-blue-500 rounded-lg" id="add" onclick="add()">Add</button>
+                <button class="text-2xl bg-blue-500 rounded-lg" id="sub" onclick="subtract()">Subtract</button>
+                <button class="text-2xl bg-blue-500 rounded-lg id="mul" onclick="multiply()">Multiply</button>
+                <button class="text-2xl bg-blue-500 rounded-lg" id="divi" onclick="divide()">Divide</button>
+            </div>
+            <div>
+                <h2 class="text-2xl bg-blue-500" id="result"></h2>
+            </div>
+            
+         </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
