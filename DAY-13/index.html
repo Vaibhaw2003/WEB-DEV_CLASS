@@ -30,10 +30,41 @@
                 <input class="text-3xl" type="text" id="num2" placeholder="Enter second number" />
             </div>
             <div class="space-x-4 border-white text-center p-4  rounded-lg flex justify-center gap-4 ">
-                <button class="text-2xl bg-blue-500 rounded-lg" id="add" onclick="add()">Add</button>
-                <button class="text-2xl bg-blue-500 rounded-lg" id="sub" onclick="subtract()">Subtract</button>
-                <button class="text-2xl bg-blue-500 rounded-lg id="mul" onclick="multiply()">Multiply</button>
-                <button class="text-2xl bg-blue-500 rounded-lg" id="divi" onclick="divide()">Divide</button>
+                <button class="text-2xl bg-blue-500 rounded-lg" id="add" onclick="add(
+                    function add() {
+                        const num1 = parseFloat(document.getElementById('num1').value);
+                        const num2 = parseFloat(document.getElementById('num2').value);
+                        const result = num1 + num2;
+                        document.getElementById('result').innerText = 'Result: ' + result;
+                })">Add</button>
+                <button class="text-2xl bg-blue-500 rounded-lg" id="sub" onclick="subtract(
+                    function subtract() {
+                        const num1 = parseFloat(document.getElementById('num1').value);
+                        const num2 = parseFloat(document.getElementById('num2').value);
+                        const result = num1 - num2;
+                        document.getElementById('result').innerText = 'Result: ' + result;
+                }
+                )">Subtract</button>
+                <button class="text-2xl bg-blue-500 rounded-lg id="mul" onclick="multiply(
+                    function multiply() {
+                        const num1 = parseFloat(document.getElementById('num1').value);
+                        const num2 = parseFloat(document.getElementById('num2').value);
+                        const result = num1 * num2;
+                        document.getElementById('result').innerText = 'Result: ' + result;
+                }
+                )">Multiply</button>
+                <button class="text-2xl bg-blue-500 rounded-lg" id="divi" onclick="divide(
+                    function divide() {
+                        const num1 = parseFloat(document.getElementById('num1').value);
+                        const num2 = parseFloat(document.getElementById('num2').value);
+                        if (num2 === 0) {
+                            document.getElementById('result').innerText = 'Error: Division by zero';
+                            return;
+                        }
+                        const result = num1 / num2;
+                        document.getElementById('result').innerText = 'Result: ' + result;
+                }
+                )">Divide</button>
             </div>
             <div>
                 <h2 class="text-2xl bg-blue-500" id="result"></h2>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-md p-8 bg-gray-900 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold mb-6 text-center uppercase">Calculator</h1>
+
+        <div class="mb-4">
+            <label for="num1" class="text-xl">First Number:</label>
+            <input type="number" id="num1" class="w-full p-2 mt-2 text-black text-2xl rounded" placeholder="Enter first number">
+        </div>
+
+        <div class="mb-4">
+            <label for="num2" class="text-xl">Second Number:</label>
+            <input type="number" id="num2" class="w-full p-2 mt-2 text-black text-2xl rounded" placeholder="Enter second number">
+        </div>
+
+        <div class="flex justify-between gap-4 mb-4">
+            <button class="bg-blue-500 p-2 rounded text-xl flex-1" onclick="add()">Add</button>
+            <button class="bg-blue-500 p-2 rounded text-xl flex-1" onclick="subtract()">Subtract</button>
+            <button class="bg-blue-500 p-2 rounded text-xl flex-1" onclick="multiply()">Multiply</button>
+            <button class="bg-blue-500 p-2 rounded text-xl flex-1" onclick="divide()">Divide</button>
+        </div>
+
+        <div>
+            <h2 id="result" class="text-2xl text-center mt-4"></h2>
+        </div>
+    </div>
+
+    <script>
+        function add() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            document.getElementById('result').innerText = 'Result: ' + (num1 + num2);
+        }
+
+        function subtract() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            document.getElementById('result').innerText = 'Result: ' + (num1 - num2);
+        }
+
+        function multiply() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            document.getElementById('result').innerText = 'Result: ' + (num1 * num2);
+        }
+
+        function divide() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            if (num2 === 0) {
+                document.getElementById('result').innerText = 'Error: Division by zero';
+            } else {
+                document.getElementById('result').innerText = 'Result: ' + (num1 / num2);
+            }
+        }
+    </script>
+
+</body>
+</html>
