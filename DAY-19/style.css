@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.for{
+    height: 500px;
+    width: 500PX;
+    background-color: burlywood;
+    justify-content: center;
+    display: flex;
+}
