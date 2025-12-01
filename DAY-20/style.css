@@ -32,7 +32,8 @@ html, body{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 100px 30px 100px 30px;
-    gap: 50px;
+    gap: 30px;
+
 }
 .card{
     height: 300px;
@@ -62,6 +63,77 @@ html, body{
 .card:hover img{
     transform: scale(1.1);
 }
+.card.btn{
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+.card h3{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color:red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+.card p{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    width: 300px;
+}
+.card .buy-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.card-content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+} 
+.card .product-rating{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+.card .product-price{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: lime;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+}
 
 .footer{
     height: 60px;
@@ -77,4 +149,5 @@ html, body{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+
 }
