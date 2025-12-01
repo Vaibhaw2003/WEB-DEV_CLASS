@@ -9,7 +9,7 @@ html, body{
     background-color: black;
 }
 .nav{
-    height: 80px;
+    height: 70px;
     width: 100%;
     background-color:white;
     display: flex;
@@ -22,7 +22,6 @@ html, body{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-
 }
 .container{
     height: 100%;
@@ -30,10 +29,52 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 30px 100px 30px;
+    gap: 50px;
+}
+.card{
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
     color: white;
-    text-align: center;
-    padding: 0 20px;
-    
+}
+.card p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.footer{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
