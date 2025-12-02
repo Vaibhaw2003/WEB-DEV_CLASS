@@ -116,6 +116,7 @@ footer {
     width: 100%;
 }
 .about-content {
+    height: 80vh;
     padding: 60px;
     text-align: center;
     background-color: #f4f4f4;
@@ -133,10 +134,12 @@ footer {
     margin: 0 auto;
 }
 .about-content {
+    height: 80vh;
     padding: 60px;
     text-align: center;
     background-color: #f4f4f4;
     color: #333;
+
 }
 .about-content h2 {
     font-size: 36px;
@@ -152,4 +155,22 @@ footer {
     height: 100px;
     width:100%;
     background-color: black;
+}
+.footers {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 100px;
+}
+.detai {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+
 }
