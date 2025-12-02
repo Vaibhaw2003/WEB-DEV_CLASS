@@ -56,6 +56,10 @@ nav ul li a {
     border-radius: 10px;
     border: 2px solid #222;
     position: relative;
+    
+}
+.card:hover {
+    border-color: red;
 }
 
 .card h3 {
@@ -109,6 +113,9 @@ footer {
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+/* ABOUT SECTION-------- */
+
 .about-main {
     background-color: black;
     color: white;
@@ -134,8 +141,8 @@ footer {
     margin: 0 auto;
 }
 .about-content {
-    height: 80vh;
-    padding: 60px;
+    height: 55vh;
+    padding: 20px;
     text-align: center;
     background-color: #f4f4f4;
     color: #333;
@@ -160,7 +167,6 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -169,8 +175,54 @@ footer {
     margin-top: 100px;
 }
 .detai {
+    display: flex;
+    height: 15vh;
+    gap: 50px;
+    background-color: #f4f4f4;
     margin-top: 30px;
+    padding: 20px;
+    color: black;
     margin-bottom: 30px;
     justify-content: space-between;
+}
 
+/* GALLERY SECTION--------*/
+
+.gallery {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.bare {
+    height: 80px;
+    width:100%;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 50px;
+    align-items: center;
+}
+.bare h1 {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+.bare ul {
+    display: flex;
+    gap: 40px;
+}
+.gallery-content {
+    height: 70vh;
+    text-align: center;
+    color: #333;
+}
+.footers {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 60px;
+    width: 100%;
 }
