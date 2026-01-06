@@ -44,16 +44,68 @@ html, body{
     overflow-y: auto;
 
 } 
-#box1, #box2, #box3{
-    width: calc(100px + 2 * 10px);
-    height: calc(100px + 2 * 10px);
-    background-color: lightblue;
-    border: 5px solid blue;
+
+#box2, #box1, #box3, img{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: darkblue;
+    text-align: center;
+    padding: 10px;
+}
+img{
+    object-fit: cover;
     border-radius: 8px;
 }
-#box2, #box1, #box3, img{
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: indigo;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+@media (max-width: 450px) {
+    #box2, #box1, #box3, img{
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 320px) {
+    #box2, #box1, #box3, img{
+        width: 250px;
+        height: 250px;
+        font-size: 16px;
+    }
+}
+#footer{
+    height: 100px;
+    width: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
 }
