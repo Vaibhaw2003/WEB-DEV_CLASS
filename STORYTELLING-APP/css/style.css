@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+}
+
+.navbar {
+    background: #6c63ff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    background: linear-gradient(120deg,#6c63ff,#ff6584);
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+
+.btn-primary {
+    background: white;
+    color: #6c63ff;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.section {
+    padding: 40px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    text-align: center;
+}
+.card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+.card h3 {
+    margin-bottom: 10px;
+}
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.footer a {
+    color: #ff6584;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.footer .social-icons {
+    margin-top: 10px;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer .social-icons a:hover {
+    color: #ff6584;
+}
+
