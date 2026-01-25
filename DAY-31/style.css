@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+#main{
+    background: linear-gradient(180deg, #0b2dd3, #8d0ca4);
+}
+#navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(258, 258, 255, 0.3);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 9px;
+        text-align: center;
+        display: inline-block;
+    }
+}
+#container{
+    color: white;
+}
