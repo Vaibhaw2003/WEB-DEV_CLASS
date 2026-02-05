@@ -42,20 +42,12 @@ html, body{
     font-size: 30px;
     font-weight: bold;
 }
-#content span{
-    color: yellow;
+#sampleImage{
+    width: 300px;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 10px;
 }
-#form{
-    margin-top: 20px;
-}
-#form input{
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-
 #myButton{
     background-color: yellow;
     color: black;
