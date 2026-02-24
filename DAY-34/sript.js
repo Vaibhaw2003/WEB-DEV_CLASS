@@ -14,5 +14,5 @@
         console.log("Number:", number);
 
         console.log("Form Submitted Successfully 🚀");
-        alert("DOne")
+        alert("Submitted Successfully 🚀")
     });
