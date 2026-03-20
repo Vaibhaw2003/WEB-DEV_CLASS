@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background: #000;
+    display: flex;
+
+}
+#nav{
+    h1{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 15px;
+    a{
+        padding: 10px;
+    }
+}
