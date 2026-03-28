@@ -8,6 +8,7 @@ html, body{
     width: 100%;
 }
 #main{
+    
 
 }
 #nav{
@@ -16,7 +17,6 @@ html, body{
         color: white;
         text-align: center;
         text-transform: uppercase;
-
     }
     height: 100px;
     width: 100%;
@@ -36,7 +36,6 @@ html, body{
         font-weight: bold;
         font-size: 40px;
         text-transform: uppercase;
-
     }
     button{
         height: 30px;
@@ -45,7 +44,6 @@ html, body{
         color:white;
         text-transform: uppercase;
         text-decoration: 2px solid red;
-
     }
     padding: 10px;
     height: 500px;
@@ -62,7 +60,6 @@ html, body{
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
-
     }
 
 }
