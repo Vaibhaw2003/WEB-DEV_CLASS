@@ -156,6 +156,31 @@ html, body {
     margin-top: 10px;
 }
 
+.contents {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contents img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.contents .btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contents .btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 /* Footer */
 .footer {
     height: 50px;
