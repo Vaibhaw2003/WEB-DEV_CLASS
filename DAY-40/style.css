@@ -190,3 +190,29 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
+
+.btnm {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #000, #333);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.btnm:hover {
+    background: linear-gradient(135deg, #62e974, #555);
+    transform: translateY(-2px);
+}
+
+/* Active Click Effect */
+.btnm:active {
+    transform: scale(0.95);
+}
