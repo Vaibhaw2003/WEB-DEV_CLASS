@@ -10,3 +10,45 @@ html,body{
     font-family: 'Times New Roman', Times, serif;
 
 }
+.container{
+    height: 70px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    a{
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+}
+.content{
+    height: calc(100% - 140px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1{
+    font-size: 50px;
+    color: black;
+}
+.content p{
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+.footer{
+    height: 70px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
