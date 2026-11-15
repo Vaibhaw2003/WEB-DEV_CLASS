@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    height: 100px;
+    h1{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+
+    }
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
